@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Pop Quiz Snippet</h2>
+<script src="https://gist.github.com/2944745.js?file=gistfile1.html" type="text/javascript"></script>
+
+{% include "ipython-sessions.html" %}
+
+<h2>Python Problem</h2>
+
+<p>Use one of the IPython sessions from above (pick the same number you used before if you can remember it).</p>
+
+<p>
+    Create a function called greet_me which accepts one argument called name, which is expected to be a string. The
+    function should print out the string 'Hello, ' and then the name that was passed in. Below are some examples of the
+    function being called and what the expected output would be. Once you've done it ask Rob to check your solution
+    before continuing.
+</p>
+
+<script src="https://gist.github.com/2944750.js?file=gistfile1.py" type="text/javascript"></script>
+
+<p>
+    Extend your greet_me function to print the message three times using a for loop and the range function. Below are
+    examples of the function being called and the expected output. Once you've done it ask Rob yo check your solution
+    before continuing.
+</p>
+
+<script src="https://gist.github.com/2944753.js?file=gistfile1.txt" type="text/javascript"></script>
+
+<p>
+    Extend your program to print the message three times if the first letter is "E", "R" or "C" but only two times if
+    it is not. Hint: you can access the letters of a string the same way you can access the items in a list, with the
+    square brackes ([]). Try the following.
+</p>
+
+<script src="https://gist.github.com/2944756.js?file=gistfile1.py" type="text/javascript"></script>
+
+<p>
+    Below are examples of the function being called anf the expected output.
+</p>
+
+<script src="https://gist.github.com/2944758.js?file=gistfile1.py" type="text/javascript"></script>
+
+
+<h2>HTML / CSS Problem</h2>
+
+<p>
+    In <a href="http://jsfiddle.net/">jsfiddle.net</a>, create an HTML page about either cats or dogs. Put your HTML
+    code in the HTML box towards the top left of the page. To view your page at any point press the 'Run' button towards
+    the top left. It must have the following:
+</p>
+
+<ol>
+    <li>A main title.</li>
+    <li>At least four paragraphs.</li>
+    <li>The first and third paragraphs must have a class of "odd".</li>
+    <li>The second and fourth paragraphs must have a class of "even".</li>
+    <li>The first paragraph must have an id of "first".</li>
+</ol>
+
+<p>Once you've got this far ask Rob to check your solution before continuing.</p>
+<p>Put your CSS code in the CSS box towards the top right of hte screen.</p>
+
+<ol>
+    <li>Make the main title 17 pixels big.</li>
+    <li>Set the background colour of the page to #ff88aa. (Hint: what element surrounds the whole page?)</li>
+    <li>Add a 10 pixel padding to all paragraphs.</li>
+    <li>Set the font colour of all even paragraphs to be red.</li>
+    <li>Make the text in the first paragraph bold. (Using CSS not HTML, Hint: it's boldness is called it's weight)</li>
+</ol>
+{% endblock %}

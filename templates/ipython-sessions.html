@@ -1,0 +1,6 @@
+<h2>Blackheath Coding Club IPython Sessions</h2>
+<ul>
+    {% for url in urls %}
+    <li><a href="http://{{ url }}">BCC IPython {{ loop.index }}</a></li>
+    {% endfor %}
+</ul>

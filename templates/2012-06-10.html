@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Pop Snippets</h2>
+    <h3>Snippet One</h3>
+    <pre>
+    my_name = "Rob"
+    print("Hello, " + my_name)
+    </pre>
+    <h3>Snippet Two</h3>
+    <pre>
+    for i in range(1, 10):
+      print(i)
+    </pre>
+    <h3>Snippet Three</h3>
+    <pre>
+    even_numbers = [2, 4, 6, 8]
+    for i in range(1, 10):
+      if i in even_numbers:
+        print(i)
+    </pre>
+    <h3>Snippet Four</h3>
+    <pre>
+    def translate(word):
+      words = {
+        "hortus":"garden",
+        "laborat":"work",
+        "canis":"dog",
+        "amicus":"friend",
+      }
+      return words[word]
+
+    print(translate("amicus"))
+    </pre>
+
+
+{% include "ipython-sessions.html" %}
+
+<h2>Number Guessing Game</h2>
+<p>
+    Create a number guessing game. When the code is executed it should pick a random number between 1 and 100 as the answer.
+    It should also produce a function called guess that accepts a single integer and returns a string. <br />
+    If the passed argument is lower than the answer it should return "Too low, pick a higher number."<br />
+    If the passed argument is higher than the answer it should return "Too high, pick a lower number."<br />
+    If the passed argument is equal to the answer it should return "Hurray! You win!"<br />
+</p>
+{% endblock %}
