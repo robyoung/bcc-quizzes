@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Working with Data - UK Baby Names</h2>
+
+<ul>
+    <li>
+        <a href="http://www.ons.gov.uk/ons/publications/all-releases.html?definition=tcm%3A77-28486">Office of National Statistics - Baby Names</a>
+    </li>
+    <li>
+        <a href="https://docs.google.com/spreadsheet/ccc?key=0Ar9L6jllB7SPdGQ1Zi1uOVo1c3daSzhMVjRzTzVGeWc">1996 Boys Names</a>
+    </li>
+    <li>
+        <a href="https://docs.google.com/spreadsheet/ccc?key=0Ar9L6jllB7SPdE1UUk9WdUNXOEVfVnBmc1U0YUhROGc">1996 Girls Names</a>
+    </li>
+    <li>
+        <a href="http://ec2-50-19-133-23.compute-1.amazonaws.com/dc53767b-57d0-4744-9707-a7199172ab62">Load Baby Names</a>
+    </li>
+    <li>
+        <a href="https://docs.google.com/spreadsheet/ccc?key=0Ar9L6jllB7SPdEJLTkNRRHBZcDcxaktyTVgwZXkyRlE">Processed Data File</a>
+    </li>
+</ul>
+
+{% include "ipython-sessions.html" %}
+
+<h2>Work with the name data</h2>
+
+<script src="https://gist.github.com/3028222.js" type="text/javascript"></script>
+
+<ol>
+    <li>Loop through the data and find the 3 most popular girls names in 2006.</li>
+    <li>Find what rank your name was each year from 1996 to 2010.</li>
+    <li>Draw a graph of your name's popularity in google docs (or a spreadsheet).</li>
+    <li>Draw a graph of all of our names in the Blackheath Coding Club.</li>
+</ol>
+{% endblock %}
