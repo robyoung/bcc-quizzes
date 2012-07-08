@@ -10,7 +10,7 @@ app = fl.Flask(__name__)
 
 @app.route("/")
 def index():
-    return fl.redirect(fl.url_for("week_notes", date="2012-07-01"))
+    return fl.redirect(fl.url_for("week_notes", date="2012-07-08"))
 
 
 @app.route("/notes/<date>")
